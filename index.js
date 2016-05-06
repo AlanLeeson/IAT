@@ -3,20 +3,32 @@
 (function(){
 	
 	var words = [];
+	var blockPairingDefinitions = [];
+	var currentBlock = 1;
 	var category = "";
+	var leftCategory = "";
+	var rightCategory = "";
 	
 	window.onload = function(){
-		console.log("Started");
-		addWord("Alan");
-		addWord("Maria");
-		addWord("Bob");
+
+		setUpQuiz();
 		
+		$("#left_category_button").text(leftCategory);
+		$("#right_category_button").text(rightCategory);
 		$("#quiz_word").text(getWord());
 		
 		$(".select_button").bind('click',function(){
 			$("#quiz_word").text(getWord());
 		});
 		
+	}
+	
+	function setUpQuiz(){
+		addWord("Alan");
+		addWord("Maria");
+		addWord("Bob");
+		leftCategory = "Muslim";
+		rightCategory = "Non-Muslim";
 	}
 	
 	function addWord(word){

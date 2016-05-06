@@ -7,6 +7,18 @@ body{
 	color:#f9f9f9
 }
 
+button{
+	display: inline-block;
+	padding:5px;
+	margin:20px;
+	border: 0 none;
+	border-radius:5px;
+	background-color:#5F021F;
+	color:#fff;
+	box-shadow:none;
+	cursor:pointer;
+}
+
 #header{
 	background-color:#a6a6a6;
 	text-align:center;
@@ -27,6 +39,13 @@ body{
 }
 
 #quiz_container{
+	text-align:center;
 	padding:10px;
 	border:1px solid #fff;
+}
+
+#quiz_word{
+	font-size:35px;
+	color:#fff;
+	margin:5px;
 }
