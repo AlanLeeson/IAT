@@ -2,9 +2,9 @@
 
 
 body{
-	padding:20px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 	background-color:#f9f9f9;
-	color:#f9f9f9
+	color:#111;
 }
 
 button{
@@ -27,15 +27,16 @@ button{
 	border-radius:10px;
 }
 
-#header h1{
-	font-size:50px;
+#title{
+	font-size:100px;
+	font-weight:100;
 }
 
 #container{
-	background-color:#a6a6a6;
-	margin-bottom:20px;
-	padding:10px;
+	background-color:#f1f1f1;
 	border-radius:10px;
+	min-height:100%;
+	bottom:0;
 }
 
 #quiz_container{
@@ -46,6 +47,19 @@ button{
 
 #quiz_word{
 	font-size:35px;
-	color:#fff;
+	color:#000;
 	margin:5px;
+}
+
+.screen{
+	text-align:center;
+	padding:20px;
+	display:none;
+}
+
+.next_button{
+	position:fixed;
+	font-size:50px;
+	bottom:0;
+	right:0;
 }
